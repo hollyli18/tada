@@ -118,15 +118,28 @@ $pep-container-color: #f3eee6;
 $pep-color: #f5b188;
 $light-beige: #EECBAE;
 $navy: #262262;
-$bubblegum: #F6AFCE;
+$bubblegum: #E7C0CF;
 $peach: #E7BFA7;
 $military-green: #575C48;
 $black: #231F20;
 $puce: #D7DF23;
 $barely-grey: #F1F2F2;
-$baby_blue: #B8C4C9;
 $beige: #D3B091;
 $caramel: #C79862;
+// $tennis-green: #246040;
+$tennis-green: #17401D;
+$tennis-red: #AA4724;
+$wes_mustard: #F4C615;
+$wes_seafoam: #757B73;
+$wes_red: #C33B27;
+$wes_cream: #F9F0CE;
+$wes_babyblue: #C3CDCF;
+$wes_earthgreen: #8D9872;
+$wes_brightyellow: #F6E201;
+$green: #1E7842;
+$medium_blue: #3F64AF;
+
+
 $background_colors: $navy, $bubblegum, $military-green, $pep-color, $black, $puce;
 //
 
@@ -159,6 +172,18 @@ $background_colors: $navy, $bubblegum, $military-green, $pep-color, $black, $puc
     }
   }
 
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1; }
+
+    100% {
+      opacity: 0; } }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1; }
+
+    100% {
+      opacity: 0; } }
 
 .slideInDown {
   -webkit-animation-name: slideInDown;
@@ -395,4 +420,16 @@ $background_colors: $navy, $bubblegum, $military-green, $pep-color, $black, $puc
   // -webkit-transform: translateY(0);
   // transform: translateY(0);
   }
+  }
+
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 1.5s linear forwards;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
   }

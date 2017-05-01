@@ -80,6 +80,7 @@
 
 			var handleKeydown = function(e) {
 
+
 				var keycode = e.keyCode || e.which;
 
 				if(keycode === '65' || '66' || '67' || '68' || '69'){
@@ -97,6 +98,7 @@
 					$list.prepend(pressing[keycode].el);
 					$('body').addClass('gif-on');
 					$display.css('background-image','url('+imgPath+keycodes[keycode].src+')').show();
+					
 				}
 
 			}

@@ -13,7 +13,6 @@
 
       $(function(){
 
-        // below: our settings for our typer-- how fast, what color cursor, etc.
        $('pre').t({
           caret:'<span style="color:red;">&para;</span>',
           speed:25,
@@ -34,15 +33,26 @@
             }
 
           }
-
-      }).click(function(){$(this).t('pause',false);});
-
-      $(document).on('click','#add-time-btn',function(){
-
-        $('pre').t('add','&gt; '+(new Date()).getTime()+'\n');
-
+      }).click(function(){
+        $(this).t('pause',false);
+        // alert('pressed key');
+        // $('pre').setTimeout(function(){$('pre').t('pause',false);}, 1000);
       });
+        // $(this).setTimeout(function(){$(this).t('pause',false);}, 1000);});
 
+
+      // $(document).on('click','#add-time-btn',function(){
+      //
+      //   $('pre').t('add','&gt; '+(new Date()).getTime()+'\n');
+      //
+      // });
+      // $(document).keypress(function(){
+      //   alert('pressed key');
+      //   $('pre').setTimeout(function(){$(this).t('pause',false);}, 1000);});
+      //
+      //
+      //
+      //
       });
       </script>
 
@@ -60,8 +70,11 @@
 
     Hello. <ins>1.0</ins>
     My name is Holly Li.<ins>1.0</ins>
-    Press some keys!
-    <em>( or click here to read on)</em>.&#x200c;
+    I'm from the middle of no where: Athens, Ohio. (Press a, then click here!)&#x200c;
+    <!-- <em>( or click here to read on)</em>.&#x200c; -->
+
+    I go to school at the University of Pennsylvania, where I study management
+    (Press b, then click here)&#x200c;
 
     I'm always <u>really</u> <del class="k">hungry<ins>0.60</ins></del><del class="k">full<ins>0.60</ins></del>...<ins>0.60</ins>indecisive.</u>
 

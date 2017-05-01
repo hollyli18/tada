@@ -55,6 +55,16 @@
   to {
     opacity: 1;
     transform: scale(1, 1); } }
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
@@ -226,6 +236,14 @@
   100% {
     transform: translate(0px, -200px);
     -webkit-transform: translate(0px, -200px); } }
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1.5s linear forwards; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
 body {
   background: #FFFFFF;
   font-family: 'PT Sans', helvetica, arial, sans-serif;
